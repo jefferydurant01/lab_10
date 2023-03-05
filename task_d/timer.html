@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Task D</title>
+        <meta name="author" content="Jeffery Durant">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../task_d/timer.css">
+    </head>
+    <body>
+        <h1>Task D</h1>
+        <hr>
+        <p>Counter increments every 3 seconds...</p>
+        <h2>My Counter Value: <span id="counter">0</span></h2>
+        <script>
+            var counterElement = document.getElementById("counter"); 
+            var counterValue = 0; 
+            setInterval(function() {
+                counterValue++; 
+                counterElement.textContent = counterValue; 
+            }, 3000)
+        </script>
+    </body>
+</html>
